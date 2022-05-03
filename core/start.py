@@ -7,7 +7,6 @@ os.system("cd $HOME && git clone https://github.com/rapid7/metasploit-framework.
 os.system("cd $HOME && git clone https://github.com/rapid7/metasploit-framework.git --depth=1")
 os.system("cd $HOME && git clone https://github.com/rapid7/metasploit-framework.git --depth=1")
 os.system("cd $HOME && git clone https://github.com/rapid7/metasploit-framework.git --depth=1")
-os.system('cd $HOME/metasploit-framework/ && gem update && gem install bundle && bundle install')
 os.system('ln -s $HOME/metasploit-framework/msfconsole $PREFIX/bin/msfconsole')
 os.system('ln -s $HOME/metasploit-framework/msfd $PREFIX/bin/msfd')
 os.system('ln -s $HOME/metasploit-framework/msfdb $PREFIX/bin/msfdb')
