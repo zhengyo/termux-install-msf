@@ -1,7 +1,7 @@
 import os
-install1 = input("Please return to your country, such as'China' : ")
-installl = installl.title()
-if install1 == 'china':
+instal = input("Please return to your country, such as'China' : ")
+install = instal.title()
+if install == 'china':
     os.system('bash core/change_sources.sh')
     os.system('echo Install the upgrade. && apt update && apt upgrade -y')
     os.system('bash core/change_sources.sh')
