@@ -1,3 +1,4 @@
+cd $HOME/measploit-framework
 pip install --upgrade pip
 pip install requests
 gem install bundler
