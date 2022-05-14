@@ -1,5 +1,6 @@
 pip install --upgrade pip
 pip install requests
+cd $PREFIX/lib/metasploit-framework
 gem install bundler
 sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock
 gem install nokogiri -v 1.8.0 -- --use-system-libraries
