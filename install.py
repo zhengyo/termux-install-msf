@@ -2,8 +2,10 @@ import os
 instal = input("Please return to your country, such as 'China' : ")
 install = instal.title()
 if install == 'China':
-    os.sysytem("sed -i 's@packages.termux.org@mirrors.ustc.edu.cn/termux@' $PREFIX/etc/apt/sources.list")
-    os.sysytem('apt update && apt upgrade -y')
+    os.system("sed -i 's@packages.termux.org@mirrors.ustc.edu.cn/termux@' $PREFIX/etc/apt/sources.list")
+    os.system('apt update && apt upgrade -y')
+    os.system("sed -i 's@packages.termux.org@mirrors.ustc.edu.cn/termux@' $PREFIX/etc/apt/sources.list")
+    os.system("apt update")
 else:
     os.system('pkg up')
 
