@@ -9,5 +9,5 @@ Installing metasploit in termux
 # How to install? 
 ### Auto:
 ```bash
-pkg up && pkg install python git -y && git clone https://github.com/zhengyo/termux-install-msf.git && cd termux-install-msf && python install.py
+pkg up && pkg install python git -y && git clone https://github.com/zhengyo/termux-install-msf.git && cd termux-install-msf && python install_msf.py
 ```
