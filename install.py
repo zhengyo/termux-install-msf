@@ -4,7 +4,7 @@ install = instal.title()
 if install == 'China':
     os.system("sed -i 's@packages.termux.org@mirrors.ustc.edu.cn/termux@' $PREFIX/etc/apt/sources.list")
     os.system('apt update && apt upgrade -y')
-    os.system("sed -i 's@packages.termux.org@mirrors.ustc.edu.cn/termux@' $PREFIX/etc/apt/sources.list")
+    os.system("bash change.sh")
     os.system("apt update")
 else:
     os.system('pkg up')
@@ -23,7 +23,7 @@ os.system('rm $PREFIX/bin/msfd && ln -s $PREFIX/lib/metasploit-framework/msfd $P
 os.system('rm $PREFIX/bin/msfdb && ln -s $PREFIX/lib/metasploit-framework/msfdb $PREFIX/bin/msfdb')
 os.system('rm $PREFIX/bin/msfrpc && ln -s $PREFIX/lib/metasploit-framework/msfrpc $PREFIX/bin/msfrpc')
 os.system('rm $PREFIX/bin/msfupdate && ln -s $PREFIX/lib/metasploit-framework/msfupdate $PREFIX/bin/msfupdate')
-os.system('rm msfvenom && ln -s $PREFIX/lib/metasploit-framework/msfvenom $PREFIX/bin/msfvenom')
+os.system('rm $PREFIX/bin/msfvenom && ln -s $PREFIX/lib/metasploit-framework/msfvenom $PREFIX/bin/msfvenom')
 os.system("pip install --upgrade pip")
 os.system("pip install requests")
 os.system("bash gem.sh")
