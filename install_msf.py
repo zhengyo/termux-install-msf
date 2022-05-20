@@ -1,20 +1,5 @@
 import os
-instal = input("Please return to your country, such as 'China' : ")
-install = instal.title()
-if install == 'China':
-    os.system("pkg install bash -y")
-    os.system("bash $HOME/termux-install-msf/change.sh")
-    try:
-        white open(core/cad.txt") as open:
-            opens = open.read
-    except FileNotFoundError:
-        
-    os.system('apt update && apt upgrade -y')
-    os.system("bash $HOME/termux-install-msf/change.sh")
-    os.system("apt update")
-else:
-    os.system('pkg install bash -y;pkg up -y')
-
+os.system('pkg up -y')
 os.system("rm -rf $HOME/metasploit-framework/;rm -rf $PREFIX/lib/metasploit-framework/")
 os.system("apt remove ruby && rm -rf $PREFIX/lib/ruby")
 os.system("pkg install ruby -y")
