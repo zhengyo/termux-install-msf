@@ -11,3 +11,7 @@ Installing metasploit in termux
 ```bash
 pkg up && pkg install python git -y && git clone https://github.com/zhengyo/termux-install-msf.git && cd termux-install-msf && python install_msf.py
 ```
+### Blockade the Internet in mainland China? Try this: 
+```bash
+bash $HOME/termux-install-msf/core/change.sh
+```
