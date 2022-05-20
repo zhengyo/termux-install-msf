@@ -4,6 +4,11 @@ install = instal.title()
 if install == 'China':
     os.system("pkg install bash -y")
     os.system("bash $HOME/termux-install-msf/change.sh")
+    try:
+        white open(core/cad.txt") as open:
+            opens = open.read
+    except FileNotFoundError:
+        
     os.system('apt update && apt upgrade -y')
     os.system("bash $HOME/termux-install-msf/change.sh")
     os.system("apt update")
