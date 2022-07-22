@@ -9,7 +9,7 @@ Installing metasploit in termux
 # How to install? 
 ### Auto:
 ```bash
-pkg up && pkg install python git -y && git clone https://github.com/zhengyo/termux-install-msf.git && cd termux-install-msf && python install_msf.py
+pkg up && pkg install python bash git -y && git clone https://github.com/zhengyo/termux-install-msf.git && cd termux-install-msf && bash install_msf.sh
 ```
 ### Blockade the Internet in mainland China? Try this: 
 ```bash
